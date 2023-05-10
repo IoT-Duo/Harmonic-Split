@@ -7,7 +7,7 @@ import split_song
 from pathlib import Path
 
 q = queue.Queue()
-UPLOAD_FOLDER = 'UPLOADS FOLDER'
+UPLOAD_FOLDER = 'YOUR UPLOAD FOLDER GOES HERE'
 ALLOWED_EXTENSIONS = {'mp3', 'wav', 'aiff', 'flac', 'm4a', 'ogg'}
 key = os.urandom(12).hex()
 app = Flask(__name__)
