@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/bootstrap.css">
+</head>
+
+<body>
+    <div class="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-6">
+                    <h1>
+                        About Us
+                    </h1>
+                </div>
+                <div class="col-md-3">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <ul class="navigation">
+                        <li>
+                            <a href="{{url_for('home')}}"><img src="{{url_for('static', filename='house.ico')}}" alt="" width=30px height=30px> Home Page</a>
+                        </li>
+                        <li>
+                            <a href="{{url_for('tuner')}}"><img src="{{url_for('static', filename='guitar.ico')}}" alt="" width=30px height=30px> Guitar Tuner</a>
+                        </li>
+                        <li>
+                            <a href="{{url_for('splitter')}}"><img src="{{url_for('static', filename='note.ico')}}" alt="" width=30px height=30px> Audio Splitter</a>
+                        </li>
+                        <li>
+                            <a href="{{url_for('about')}}"><img src="{{url_for('static', filename='phone.ico')}}" alt="" width=30px height=30px> About Us</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Harmonic Split</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">
+        <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="Logo 1/1" width="50px" height="50px">
+      </a>
+      <a class="navbar-brand-name"><img src="{{url_for('static', filename='images/logowords.png')}}" width="250px" height="50px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('splitter') }}">Splitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('tuner') }}">Tuner</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+<div class="container main-content">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-md-6 text-center">
+      <img src="{{url_for('static', filename='images/inversedlogo.png')}}" alt="logo" class="guitar-image" width="150px" height="150px">
+      <div class="image-text-container">
+        <img src="{{url_for('static', filename='images/inversedwords.png')}}" alt="Guitar 2/2" class="guitar-image" width="500px" height="100px">
+        <p class="main-text text-container">Experience music like never before with our advanced guitar tuner and AI-powered song splitter!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Add Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

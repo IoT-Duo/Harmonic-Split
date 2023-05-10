@@ -1,0 +1,100 @@
+body {
+    background: url('/static/images/tunerbkg.png') center/cover no-repeat fixed;
+}
+
+/* Nav styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+/* Form container styles */
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0px 0px 20px #e74c3c;
+    border-radius: 15px;
+
+}
+
+
+.form-container h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Form input styles */
+.form-group label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form-control-file {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+/* Loading animation */
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #c0392b;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    margin: 10px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hide the loading animation by default */
+#loading {
+    display: none;
+    
+}
+.queue_text{
+    font-weight: bold;
+}

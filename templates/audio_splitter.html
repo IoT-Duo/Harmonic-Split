@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HS Splitter</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/upload.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Add Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="Logo 1/1" width="50px" height="50px">
+        </a>
+        <a class="navbar-brand-name"><img src="{{url_for('static', filename='images/logowords.png')}}" width="250px" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('splitter') }}">Splitter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('tuner') }}">Tuner</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <form method="POST" enctype="multipart/form-data" action="/splitter">
+            <h2>Select audio file</h2>
+            <div class="form-group">
+                <label  for="file">Choose file:</label>
+                <input type="file" accept="audio/mp3, audio/wav, audio/aiff, audio/flac, audio/m4a, audio/ogg" class="form-control-file" name="file" id="file">
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit_button">Upload</button>
+        </form>
+
+        <p class="queue_text">There are <span id="queue-size"></span> users in front of you.</p>
+        <div id="loading" class="loader"></div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            setInterval(function() {
+                $.ajax({
+                    url: "/refresh",
+                    method: "POST",
+                    dataType: "json",
+                    success: function(response) {
+                        $('#queue-size').text(response.queue_size);
+                    }
+                });
+            }, 5);
+        });
+
+    </script>
+ <script>
+     $(document).ready(function() {
+    $("#submit_button").click(function() {
+        // Show the loading animation
+        $("#loading").show();
+
+        // Calculate the loading time based on the queue size
+        var queueSize = parseInt($("#queue-size").text());
+        var loadingTime = (queueSize + 1) * 30000; // 30 seconds per item in queue
+
+        // Set a timeout to hide the loading animation after the loading time has elapsed
+        setTimeout(function() {
+            $("#loading").hide();
+        }, loadingTime);
+    });
+
+    setInterval(function() {
+        $.ajax({
+            url: "/refresh",
+            method: "POST",
+            dataType: "json",
+            success: function(response) {
+                $('#queue-size').text(response.queue_size);
+            }
+        });
+    }, 500);
+});
+    </script>
+</body>
+
+</html>
