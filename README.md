@@ -23,7 +23,7 @@ Got 2nd place in category - `Computers and Information Technology in English`
 ### Audio Splitter Page
 ![Audio Splitter Page](https://github.com/AurasV/Guitar-Tuner-and-AI-Song-Splitter-Web-Application/assets/80701407/ac041b48-eb03-448c-bd2c-63842e47eb6f)
 
-# Usage:
+# Usage & Requirements:
 #### *Python Version*:
 Built and tested on Python 3.10.6
 #### *Operating System*:
