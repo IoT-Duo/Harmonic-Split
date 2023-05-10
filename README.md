@@ -1,10 +1,13 @@
 ## Harmonic Split - Web Application Consisting of Guitar Tuner Made in JavaScript and AI Song Splitter - Spleeter Made in Python
 ### About This Web Application:
 Made by: 
+
 Frimu Aurel-Viorel:
 - [GitHub](https://github.com/AurasV)
+
 Nisipeanu Ionut:
 - [Github](https://github.com/Nasapan23)
+
 Made for the Scientific Communication Session 2023 Organized by:
 
 `Politehnica University of Bucharest - Faculty of Engineering in Foreign Languages`
