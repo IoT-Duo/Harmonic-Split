@@ -6,7 +6,7 @@ Frimu Aurel-Viorel:
 - [GitHub](https://github.com/AurasV)
 
 Nisipeanu Ionut:
-- [Github](https://github.com/Nasapan23)
+- [GitHub](https://github.com/Nasapan23)
 
 Made for the Scientific Communication Session 2023 Organized by:
 
