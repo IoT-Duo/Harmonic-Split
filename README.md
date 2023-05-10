@@ -2,10 +2,10 @@
 ### About This Web Application:
 Made by: 
 
-Frimu Aurel-Viorel:
+Frimu Aurel-Viorel
 - [GitHub](https://github.com/AurasV)
 
-Nisipeanu Ionut:
+Nisipeanu Ionut
 - [GitHub](https://github.com/Nasapan23)
 
 Made for the Scientific Communication Session 2023 Organized by:
