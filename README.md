@@ -1,6 +1,8 @@
 ## Harmonic Split - Web Application Consisting of Guitar Tuner Made in JavaScript and AI Song Splitter - Spleeter Made in Python
 ### About This Web Application:
-Made for the Scientific Communication Session 2023 Organized by `Politehnica University of Bucharest - Faculty of Engineering in Foreign Languages`
+Made for the Scientific Communication Session 2023 Organized by:
+
+`Politehnica University of Bucharest - Faculty of Engineering in Foreign Languages`
 - English link - [here](http://fils.upb.ro/en/scientific-communication-session/)
 - Romanian link - [here](http://fils.upb.ro/ro/sesiune-comunicari-stiintifice/)
 - French link - [here](http://fils.upb.ro/fr/seance-de-communication-scientifique/)
