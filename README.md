@@ -11,9 +11,9 @@ Nisipeanu Ionut
 Made for the Scientific Communication Session 2023 Organized by:
 
 `Politehnica University of Bucharest - Faculty of Engineering in Foreign Languages`
-- English link - [here](http://fils.upb.ro/en/scientific-communication-session/)
-- Romanian link - [here](http://fils.upb.ro/ro/sesiune-comunicari-stiintifice/)
-- French link - [here](http://fils.upb.ro/fr/seance-de-communication-scientifique/)
+- English link - [here](fils.upb.ro/en/scientific-communication-session/)
+- Romanian link - [here](fils.upb.ro/ro/sesiune-comunicari-stiintifice/)
+- French link - [here](fils.upb.ro/fr/seance-de-communication-scientifique/)
 
 Got 2nd place in category - `Computers and Information Technology in English`
 ### Main Page
